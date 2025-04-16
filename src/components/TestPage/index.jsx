@@ -10,7 +10,7 @@ const TestPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentBlank, setCurrentBlank] = useState(0);
   const [filledAnswers, setFilledAnswers] = useState([]);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(30);
   const [selectedWords, setSelectedWords] = useState([]);
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
   const navigate = useNavigate()
@@ -90,7 +90,7 @@ const TestPage = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1);
       setCurrentBlank(0);
-      setTimeLeft(60);
+      setTimeLeft(30);
       setFilledAnswers([]);
       setSelectedWords([]);
     } else {
